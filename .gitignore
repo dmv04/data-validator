@@ -12,5 +12,4 @@ bin
 .project*
 .classpath
 .idea
-app/.idea
 .factorypath
