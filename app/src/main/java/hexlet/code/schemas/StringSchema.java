@@ -1,7 +1,6 @@
 package hexlet.code.schemas;
 
 import java.util.LinkedHashMap;
-import java.util.Map;
 
 public final class StringSchema extends BaseSchema<String> {
     public StringSchema() {
