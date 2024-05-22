@@ -1,10 +1,11 @@
 package hexlet.code.schemas;
 
 import java.util.LinkedHashMap;
+import java.util.Map;
 
-public class StringSchema extends BaseSchema {
+public final class StringSchema extends BaseSchema<String> {
     public StringSchema() {
-        this.parameters = new LinkedHashMap<>();
+        setParameters(new LinkedHashMap<>());
     }
 
     public StringSchema minLength(int length) {

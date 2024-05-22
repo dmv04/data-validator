@@ -4,9 +4,9 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Objects;
 
-public class MapSchema<T> extends BaseSchema<Map<String, T>> {
+public final class MapSchema<T> extends BaseSchema<Map<String, T>> {
     public MapSchema() {
-        this.parameters = new LinkedHashMap();
+        setParameters(new LinkedHashMap<>());
     }
 
     public MapSchema<T> required() {
