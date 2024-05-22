@@ -5,8 +5,7 @@ import java.util.Objects;
 
 public final class NumberSchema extends BaseSchema<Integer> {
     public NumberSchema() {
-        setParameters(new LinkedHashMap<>());
-    }
+        this.parameters = new LinkedHashMap<>();    }
 
     public NumberSchema required() {
         addParameter("required", Objects::nonNull);

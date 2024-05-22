@@ -6,8 +6,7 @@ import java.util.Objects;
 
 public final class MapSchema<T> extends BaseSchema<Map<String, T>> {
     public MapSchema() {
-        setParameters(new LinkedHashMap<>());
-    }
+        this.parameters = new LinkedHashMap<>();    }
 
     public MapSchema<T> required() {
         addParameter("required", Objects::nonNull);

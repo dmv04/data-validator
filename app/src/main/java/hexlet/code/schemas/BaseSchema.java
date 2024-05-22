@@ -1,13 +1,11 @@
 package hexlet.code.schemas;
 
-import lombok.Setter;
-
+import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.function.Predicate;
 
-@Setter
 public abstract class BaseSchema<T> {
-    private Map<String, Predicate<T>> parameters;
+    protected Map<String, Predicate<T>> parameters = new LinkedHashMap<>();
     public final boolean isValid(T value) {
         for (var schemas : parameters.entrySet()) {
             schemas.getValue().test(value);

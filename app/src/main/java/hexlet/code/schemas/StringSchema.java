@@ -4,7 +4,7 @@ import java.util.LinkedHashMap;
 
 public final class StringSchema extends BaseSchema<String> {
     public StringSchema() {
-        setParameters(new LinkedHashMap<>());
+        this.parameters = new LinkedHashMap<>();
     }
 
     public StringSchema minLength(int length) {
